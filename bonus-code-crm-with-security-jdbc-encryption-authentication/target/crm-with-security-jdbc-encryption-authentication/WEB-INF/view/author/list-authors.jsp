@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%@ include file = "header.jsp" %>
+<%@ include file="../system/header-with-menu.jsp" %>
 <%--
   Created by IntelliJ IDEA.
   User: Buxkso
@@ -16,7 +16,7 @@
 <html>
 
 <head>
-    <title>List Styles</title>
+    <title>List Authors</title>
 
     <!-- reference our style sheet -->
 
@@ -30,7 +30,7 @@
 
 <div id="wrapper">
     <div id="header">
-        <h2>CRM - Style Relationship Manager</h2>
+        <h2>CRM - Author Relationship Manager</h2>
     </div>
 </div>
 
@@ -42,9 +42,9 @@
 
         <security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
 
-            <!-- put new button: Add Style -->
+            <!-- put new button: Add Author -->
 
-            <input type="button" value="Add Style"
+            <input type="button" value="Add Author"
                    onclick="window.location.href='showFormForAdd'; return false;"
                    class="add-button"
             />
@@ -57,7 +57,7 @@
         <table>
             <tr>
                 <th>Name</th>
-
+                <th>Surname</th>
 
                 <%-- Only show "Action" column for managers or admin --%>
                 <security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
@@ -69,20 +69,21 @@
             </tr>
 
             <!-- loop over and print our authors -->
-            <c:forEach var="tempStyle" items="${styles}">
+            <c:forEach var="tempAuthor" items="${authors}">
 
                 <!-- construct an "update" link with author id -->
-                <c:url var="updateLink" value="/style/showFormForUpdate">
-                    <c:param name="styleId" value="${tempStyle.style_id}" />
+                <c:url var="updateLink" value="/author/showFormForUpdate">
+                    <c:param name="authorId" value="${tempAuthor.id}" />
                 </c:url>
 
                 <!-- construct an "delete" link with author id -->
-                <c:url var="deleteLink" value="/style/delete">
-                    <c:param name="styleId" value="${tempStyle.style_id}" />
+                <c:url var="deleteLink" value="/author/delete">
+                    <c:param name="authorId" value="${tempAuthor.id}" />
                 </c:url>
 
                 <tr>
-                    <td> ${tempStyle.name} </td>
+                    <td> ${tempAuthor.name} </td>
+                    <td> ${tempAuthor.surname} </td>
                  
 
                     <security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">

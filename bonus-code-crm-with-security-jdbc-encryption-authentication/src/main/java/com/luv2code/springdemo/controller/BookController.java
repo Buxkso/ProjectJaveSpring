@@ -11,9 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -43,7 +41,7 @@ public class BookController {
         // add the books to the model
         theModel.addAttribute("books", theBooks);
 
-        return "list-books";
+        return "book/list-books";
     }
 
     @GetMapping("/showFormForAdd")
@@ -57,7 +55,7 @@ public class BookController {
         theModel.addAttribute("styles", theStyles);
         theModel.addAttribute("book", theBook);
 
-        return "book-form";
+        return "book/book-form";
     }
 
     @GetMapping("/bookToCart")
@@ -112,7 +110,7 @@ public class BookController {
         theModel.addAttribute("book", theBook);
 
         // send over to our form		
-        return "book-form";
+        return "book/book-form";
     }
 
     @GetMapping("/delete")

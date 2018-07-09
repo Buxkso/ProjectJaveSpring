@@ -25,7 +25,7 @@ public class StyleController {
         // add the styles to the model
         theModel.addAttribute("styles", theStyles);
 
-        return "list-styles";
+        return "style/list-styles";
     }
 
     @GetMapping("/showFormForAdd")
@@ -36,7 +36,7 @@ public class StyleController {
 
         theModel.addAttribute("style", theStyle);
 
-        return "style-form";
+        return "style/style-form";
     }
 
     @PostMapping("/saveStyle")
@@ -59,7 +59,7 @@ public class StyleController {
         theModel.addAttribute("style", theStyle);
 
         // send over to our form		
-        return "style-form";
+        return "style/style-form";
     }
 
     @GetMapping("/delete")

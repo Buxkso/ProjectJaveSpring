@@ -25,7 +25,7 @@ public class AuthorController {
         // add the authors to the model
         theModel.addAttribute("authors", theAuthors);
 
-        return "list-authors";
+        return "author/list-authors";
     }
 
     @GetMapping("/showFormForAdd")
@@ -36,7 +36,7 @@ public class AuthorController {
 
         theModel.addAttribute("author", theAuthor);
 
-        return "author-form";
+        return "author/author-form";
     }
 
     @PostMapping("/saveAuthor")
@@ -59,7 +59,7 @@ public class AuthorController {
         theModel.addAttribute("author", theAuthor);
 
         // send over to our form		
-        return "author-form";
+        return "author/author-form";
     }
 
     @GetMapping("/delete")

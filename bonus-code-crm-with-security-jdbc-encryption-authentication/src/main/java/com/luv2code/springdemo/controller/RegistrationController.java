@@ -58,7 +58,7 @@ public class RegistrationController {
 		
 		theModel.addAttribute("crmUser", new CrmUser());
 		
-		return "registration-form";
+		return "registration/registration-form";
 		
 	}
 
@@ -80,7 +80,7 @@ public class RegistrationController {
 
 			logger.warning("User name/password can not be empty.");
 			
-			return "registration-form";	
+			return "registration/registration-form";
 		}
 		
 		// check the database if user already exists
@@ -92,7 +92,7 @@ public class RegistrationController {
 
 			logger.warning("User name already exists.");
 			
-			return "registration-form";			
+			return "registration/registration-form";
 		}
 		
 		//
@@ -121,7 +121,7 @@ public class RegistrationController {
 
         logger.info("Successfully created user: " + userName);
         
-        return "registration-confirmation";		
+        return "registration/registration-confirmation";
 	}
 	
 	private boolean doesUserExist(String userName) {
