@@ -50,9 +50,7 @@
 		
 			<table>
 				<tr>
-					<th>First Name</th>
-					<th>Last Name</th>
-					<th>Email</th>
+					<th>Username</th>
 					
 					<%-- Only show "Action" column for managers or admin --%>
 					<security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
@@ -66,36 +64,10 @@
 				<!-- loop over and print our customers -->
 				<c:forEach var="tempCustomer" items="${customers}">
 				
-					<!-- construct an "update" link with customer id -->
-					<c:url var="updateLink" value="/customer/showFormForUpdate">
-						<c:param name="customerId" value="${tempCustomer.id}" />
-					</c:url>					
 
-					<!-- construct an "delete" link with customer id -->
-					<c:url var="deleteLink" value="/customer/delete">
-						<c:param name="customerId" value="${tempCustomer.id}" />
-					</c:url>					
 					
 					<tr>
-						<td> ${tempCustomer.firstName} </td>
-						<td> ${tempCustomer.lastName} </td>
-						<td> ${tempCustomer.email} </td>
-
-						<security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
-						
-							<td>
-								<security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
-									<!-- display the update link -->
-									<a href="${updateLink}">Update</a>
-								</security:authorize>
-	
-								<security:authorize access="hasAnyRole('ADMIN')">
-									<a href="${deleteLink}"
-									   onclick="if (!(confirm('Are you sure you want to delete this customer?'))) return false">Delete</a>
-								</security:authorize>
-							</td>
-
-						</security:authorize>
+						<td> ${tempCustomer.userName} </td>
 												
 					</tr>
 				

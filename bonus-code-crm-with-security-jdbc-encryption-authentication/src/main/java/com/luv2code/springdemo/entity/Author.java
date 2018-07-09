@@ -19,7 +19,7 @@ public class Author {
     @Column(name="surname")
     private String surname;
 
-    @OneToMany(mappedBy="theAuthor")
+    @OneToMany(mappedBy="theAuthor", cascade = CascadeType.ALL)
     private List<Book> book = new ArrayList<Book>();
 
     public Author(){

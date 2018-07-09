@@ -1,9 +1,7 @@
 package com.luv2code.springdemo.entity;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 
 @Entity
 @Table(name="books")
@@ -11,8 +9,8 @@ public class Book {
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    @Column(name="id")
-    private int id;
+    @Column(name="book_id")
+    private int book_id;
 
     @Column(name="name")
     private String name;
@@ -46,19 +44,22 @@ public class Book {
         this.theUsername = theUsername;
     }
 
-    @ManyToMany(mappedBy = "bookList")
-    private List<Style> styleList = new ArrayList<Style>();
+
+    @ManyToMany(cascade = { CascadeType.ALL },fetch = FetchType.EAGER)
+    @JoinTable(name="book_style",joinColumns = {@JoinColumn(name="book_id")},
+            inverseJoinColumns = {@JoinColumn(name="style_id")})
+    private List<Style> styleList = new ArrayList<>();
 
     public Book(){
 
     }
 
-    public int getId() {
-        return id;
+    public int getBook_id() {
+        return book_id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setBook_id(int book_id) {
+        this.book_id = book_id;
     }
 
     public String getName() {
@@ -101,7 +102,6 @@ public class Book {
         this.reserved = reserved;
     }
 
-
     public List<Style> getStyleList() {
         return styleList;
     }
@@ -109,4 +109,12 @@ public class Book {
     public void setStyleList(List<Style> styleList) {
         this.styleList = styleList;
     }
+
+    public void addStyle(Style theStyle){
+        if(styleList == null){
+            styleList = new ArrayList<>();
+        }
+        styleList.add(theStyle);
+    }
+
 }

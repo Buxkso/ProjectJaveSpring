@@ -2,16 +2,18 @@ package com.luv2code.springdemo.service;
 
 import java.util.List;
 
+import com.luv2code.springdemo.entity.CrmUser;
 import com.luv2code.springdemo.entity.Customer;
 
 public interface CustomerService {
 
-	public List<Customer> getCustomers();
+	public List<CrmUser> getCrmUsers();
 
-	public void saveCustomer(Customer theCustomer);
+	public CrmUser getCrmUser(String theUsername);
 
-	public Customer getCustomer(int theId);
+	public void saveCrmUser(CrmUser thecrmUser);
 
-	public void deleteCustomer(int theId);
-	
+	public void deleteCrmUser(String theUsername);
+
+
 }

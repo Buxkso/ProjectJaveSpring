@@ -2,13 +2,14 @@ package com.luv2code.springdemo.dao;
 
 import java.util.List;
 
+import com.luv2code.springdemo.entity.CrmUser;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.luv2code.springdemo.entity.Customer;
+import com.luv2code.springdemo.entity.CrmUser;
 
 @Repository
 public class CustomerDAOImpl implements CustomerDAO {
@@ -18,56 +19,56 @@ public class CustomerDAOImpl implements CustomerDAO {
 	private SessionFactory sessionFactory;
 			
 	@Override
-	public List<Customer> getCustomers() {
+	public List<CrmUser> getCrmUsers() {
 		
 		// get the current hibernate session
 		Session currentSession = sessionFactory.getCurrentSession();
 				
 		// create a query  ... sort by last name
-		Query<Customer> theQuery = 
-				currentSession.createQuery("from Customer order by lastName",
-											Customer.class);
+		Query<CrmUser> theQuery = 
+				currentSession.createQuery("from CrmUser c, Authority a where c.username like a.username order by a.username",
+											);
 		
 		// execute query and get result list
-		List<Customer> customers = theQuery.getResultList();
+		List<CrmUser> crmUsers = theQuery.getResultList();
 				
 		// return the results		
-		return customers;
+		return crmUsers;
 	}
 
 	@Override
-	public void saveCustomer(Customer theCustomer) {
+	public void saveCrmUser(CrmUser thecrmUser) {
 
 		// get current hibernate session
 		Session currentSession = sessionFactory.getCurrentSession();
 		
-		// save/upate the customer ... finally LOL
-		currentSession.saveOrUpdate(theCustomer);
+		// save/upate the CrmUser ... finally LOL
+		currentSession.saveOrUpdate(thecrmUser);
 		
 	}
 
 	@Override
-	public Customer getCustomer(int theId) {
+	public CrmUser getCrmUser(String theUsername) {
 
 		// get the current hibernate session
 		Session currentSession = sessionFactory.getCurrentSession();
 		
 		// now retrieve/read from database using the primary key
-		Customer theCustomer = currentSession.get(Customer.class, theId);
+		CrmUser thecrmUser = currentSession.get(CrmUser.class, theUsername);
 		
-		return theCustomer;
+		return thecrmUser;
 	}
 
 	@Override
-	public void deleteCustomer(int theId) {
+	public void deleteCrmUser(String theUsername) {
 
 		// get the current hibernate session
 		Session currentSession = sessionFactory.getCurrentSession();
 		
 		// delete object with primary key
 		Query theQuery = 
-				currentSession.createQuery("delete from Customer where id=:customerId");
-		theQuery.setParameter("customerId", theId);
+				currentSession.createQuery("delete from users where username like :crmUserId");
+		theQuery.setParameter("crmUserId", theUsername);
 		
 		theQuery.executeUpdate();		
 	}

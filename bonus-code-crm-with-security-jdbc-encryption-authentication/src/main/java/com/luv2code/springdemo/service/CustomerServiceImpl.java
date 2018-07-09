@@ -2,6 +2,7 @@ package com.luv2code.springdemo.service;
 
 import java.util.List;
 
+import com.luv2code.springdemo.entity.CrmUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -18,29 +19,29 @@ public class CustomerServiceImpl implements CustomerService {
 	
 	@Override
 	@Transactional
-	public List<Customer> getCustomers() {
-		return customerDAO.getCustomers();
+	public List<CrmUser> getCrmUsers() {
+		return customerDAO.getCrmUsers();
 	}
 
 	@Override
 	@Transactional
-	public void saveCustomer(Customer theCustomer) {
+	public void saveCrmUser(CrmUser thecrmUser) {
 
-		customerDAO.saveCustomer(theCustomer);
+		customerDAO.saveCrmUser(thecrmUser);
 	}
 
 	@Override
 	@Transactional
-	public Customer getCustomer(int theId) {
+	public CrmUser getCrmUser(String theUsername) {
 		
-		return customerDAO.getCustomer(theId);
+		return customerDAO.getCrmUser(theUsername);
 	}
 
 	@Override
 	@Transactional
-	public void deleteCustomer(int theId) {
+	public void deleteCrmUser(String theUsername) {
 		
-		customerDAO.deleteCustomer(theId);
+		customerDAO.deleteCrmUser(theUsername);
 	}
 }
 
