@@ -19,6 +19,10 @@ public class Book {
     @JoinColumn(name="author")
     private Author theAuthor;
 
+    @ManyToOne
+    @JoinColumn(name = "cart")
+    private Cart theCart;
+
 
     @Temporal(TemporalType.DATE)
     @Column(name="reserved_from")
@@ -36,14 +40,6 @@ public class Book {
     @JoinColumn(name = "username")
     private CrmUser theUsername;
 
-    public CrmUser getTheUsername() {
-        return theUsername;
-    }
-
-    public void setTheUsername(CrmUser theUsername) {
-        this.theUsername = theUsername;
-    }
-
 
     @ManyToMany(cascade = { CascadeType.ALL },fetch = FetchType.EAGER)
     @JoinTable(name="book_style",joinColumns = {@JoinColumn(name="book_id")},
@@ -52,6 +48,22 @@ public class Book {
 
     public Book(){
 
+    }
+
+    public Cart getTheCart() {
+        return theCart;
+    }
+
+    public void setTheCart(Cart theCart) {
+        this.theCart = theCart;
+    }
+
+    public CrmUser getTheUsername() {
+        return theUsername;
+    }
+
+    public void setTheUsername(CrmUser theUsername) {
+        this.theUsername = theUsername;
     }
 
     public int getBook_id() {

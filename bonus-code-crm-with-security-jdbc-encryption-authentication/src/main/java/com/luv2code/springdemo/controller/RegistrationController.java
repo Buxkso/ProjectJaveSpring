@@ -5,6 +5,9 @@ import java.util.logging.Logger;
 
 import javax.validation.Valid;
 
+import com.luv2code.springdemo.entity.Cart;
+import com.luv2code.springdemo.service.CartService;
+import com.luv2code.springdemo.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.security.core.GrantedAuthority;
@@ -31,6 +34,12 @@ public class RegistrationController {
 	
 	@Autowired
 	private UserDetailsManager userDetailsManager;
+
+	@Autowired
+	private CustomerService customerService;
+
+	@Autowired
+	private CartService cartService;
 	
 	private PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 	
@@ -103,9 +112,13 @@ public class RegistrationController {
         // create user object (from Spring Security framework)
         User tempUser = new User(userName, encodedPassword, authorities);
 
+        Cart theCart = new Cart();
         // save user in the database
-        userDetailsManager.createUser(tempUser);		
-		
+        userDetailsManager.createUser(tempUser);
+        CrmUser createdUser = customerService.getCrmUser(userName);
+        theCart.setCartOfUser(createdUser);
+		cartService.saveCart(theCart);
+
         logger.info("Successfully created user: " + userName);
         
         return "registration-confirmation";		

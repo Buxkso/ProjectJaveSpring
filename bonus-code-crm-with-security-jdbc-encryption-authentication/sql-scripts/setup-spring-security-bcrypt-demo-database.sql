@@ -62,6 +62,21 @@ CREATE TABLE `authors` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
+DROP TABLE IF EXISTS `carts`;
+CREATE TABLE `carts` (
+  `cart_id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) NOT NULL,
+  PRIMARY KEY (`cart_id`),
+  CONSTRAINT `carts_ibfk_1` FOREIGN KEY (`username`) REFERENCES `users` (`username`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+
+INSERT INTO `carts`
+VALUES
+('1','jano'),
+('2','fero'),
+('3','adam');
+
+
 
 DROP TABLE IF EXISTS `books`;
 CREATE TABLE `books` (
@@ -72,9 +87,11 @@ CREATE TABLE `books` (
   `reserved_to` date ,
   `reserved` int(1) NOT NULL,
   `username` varchar(50) ,
+  `cart` int(11) ,
   PRIMARY KEY (`book_id`),
   CONSTRAINT `books_ibfk_1` FOREIGN KEY (`username`) REFERENCES `users` (`username`),
-  CONSTRAINT `books_ibfk_2` FOREIGN KEY (`author`) REFERENCES `authors` (`id`)
+  CONSTRAINT `books_ibfk_2` FOREIGN KEY (`author`) REFERENCES `authors` (`id`),
+  CONSTRAINT `books_ibfk_3` FOREIGN KEY (`cart`) REFERENCES `carts` (`cart_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 
@@ -95,7 +112,7 @@ CREATE TABLE `book_style` (
   CONSTRAINT `book_style_ibfk_1`
   FOREIGN KEY (`book_id`) REFERENCES books (`book_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `book_style_ibfk_2`
-    FOREIGN KEY (`style_id`) REFERENCES styles (`style_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+    FOREIGN KEY (`style_id`) REFERENCES styles (`style_id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 SET FOREIGN_KEY_CHECKS=1;
 

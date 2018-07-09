@@ -30,11 +30,22 @@ public class CrmUser {
 	@OneToMany(mappedBy="theUsername")
 	private List<Book> book = new ArrayList<Book>();
 
+    @OneToOne(mappedBy="cartOfUser")
+    private Cart userCart;
+
     public CrmUser() {
 
     }
 
-    public List<Authority> getAuths() {
+	public Cart getUserCart() {
+		return userCart;
+	}
+
+	public void setUserCart(Cart userCart) {
+		this.userCart = userCart;
+	}
+
+	public List<Authority> getAuths() {
         return auths;
     }
 
@@ -50,7 +61,6 @@ public class CrmUser {
 	public void setBook(List<Book> book) {
 		this.book = book;
 	}
-
 
 
 	public String getUserName() {
