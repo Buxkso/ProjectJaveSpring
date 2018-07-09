@@ -1,12 +1,10 @@
 package com.luv2code.springdemo.controller;
 
-import com.luv2code.springdemo.entity.Author;
-import com.luv2code.springdemo.entity.Book;
-import com.luv2code.springdemo.entity.Style;
-import com.luv2code.springdemo.service.AuthorService;
-import com.luv2code.springdemo.service.BookService;
-import com.luv2code.springdemo.service.StyleService;
+import com.luv2code.springdemo.entity.*;
+import com.luv2code.springdemo.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -29,7 +27,13 @@ public class BookController {
     private AuthorService authorService;
 
     @Autowired
+    private CustomerService customerService;
+
+    @Autowired
     private StyleService styleService;
+
+    @Autowired
+    private CartService cartService;
 
     @GetMapping("/list")
     public String listBooks(Model theModel) {
@@ -56,10 +60,21 @@ public class BookController {
         return "book-form";
     }
 
+    @GetMapping("/bookToCart")
+    public String bookToCart(@RequestParam("bookId") int theId,
+                             Model theModel){
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        CrmUser usr = customerService.getCrmUser(authentication.getName());
+        Cart crt = usr.getUserCart();
+        Book bk = bookService.getBook(theId);
+        bk.setTheCart(crt);
+        bookService.saveBook(bk);
+        return "redirect:/book/list";
+    }
+
     @PostMapping("/saveBook")
     public String saveBook(HttpServletRequest request)throws ServletException,IOException {
 
-        // save the book using our service
         String[] identifier = request.getParameterValues("book_id");
         Book theBook;
         if(identifier[0].equals("0")) {
@@ -90,8 +105,8 @@ public class BookController {
         Book theBook = bookService.getBook(theId);
         List<Style> styles = styleService.getStyles();
         List<Author> theAuthors = authorService.getAuthors();
-        // set book as a model attribute to pre-populate the form
 
+        // set book as a model attribute to pre-populate the form
         theModel.addAttribute("authors", theAuthors);
         theModel.addAttribute("styles",styles);
         theModel.addAttribute("book", theBook);

@@ -1,5 +1,8 @@
 package com.luv2code.springdemo.entity;
 
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
+
 import javax.persistence.*;
 import java.util.*;
 
@@ -21,6 +24,7 @@ public class Book {
 
     @ManyToOne
     @JoinColumn(name = "cart")
+    @LazyCollection(LazyCollectionOption.FALSE)
     private Cart theCart;
 
 

@@ -74,8 +74,12 @@
 					<!-- construct an "delete" link with book id -->
 					<c:url var="deleteLink" value="/book/delete">
 						<c:param name="bookId" value="${tempBook.book_id}" />
-					</c:url>					
-					
+					</c:url>
+					<c:url var="addBookToCard" value="/book/bookToCart">
+						<c:param name="bookId" value="${tempBook.book_id}" />
+					</c:url>
+
+
 					<tr>
 						<td> ${tempBook.name} </td>
 						<td> ${tempBook.reserved} </td>
@@ -105,9 +109,12 @@
 									<a href="${deleteLink}"
 									   onclick="if (!(confirm('Are you sure you want to delete this book?'))) return false">Delete</a>
 								</security:authorize>
-							</td>
+
 
 						</security:authorize>
+								<a href="${addBookToCard}">addToCart</a>
+
+							</td>
 												
 					</tr>
 				
