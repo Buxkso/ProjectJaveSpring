@@ -18,6 +18,13 @@ public class Authority {
 	@LazyCollection(LazyCollectionOption.TRUE)
 	private CrmUser theUsernameAuth;
 
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
+	}
 
 }
 

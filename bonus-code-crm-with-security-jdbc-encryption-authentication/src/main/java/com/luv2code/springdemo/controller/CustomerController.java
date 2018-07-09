@@ -1,7 +1,9 @@
 package com.luv2code.springdemo.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import com.luv2code.springdemo.entity.Authority;
 import com.luv2code.springdemo.entity.CrmUser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -29,8 +31,6 @@ public class CustomerController {
 		theModel.addAttribute("customers", theCrmUsers);
 		return "list-customers";
 	}
-
-
 
 }
 

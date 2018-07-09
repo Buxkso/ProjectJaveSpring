@@ -42,6 +42,7 @@ public class CrmUser {
         this.auths = auths;
     }
 
+
     public List<Book> getBook() {
 		return book;
 	}
