@@ -82,7 +82,7 @@
 						<td> ${tempBook.reserved_from} </td>
 						<td> ${tempBook.reserved_to} </td>
 						<td> ${tempBook.theUsername} </td>
-						<td> ${tempBook.theAuthor} </td>
+						<td> ${tempBook.theAuthor.fullname} </td>
 						<td>
 
 								<c:forEach var="tempStyle" items="${tempBook.styleList}">

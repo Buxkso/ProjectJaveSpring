@@ -39,7 +39,7 @@
 				<!-- put new button: Add Customer -->
 			
 				<input type="button" value="Add Customer"
-					   onclick="window.location.href='showFormForAdd'; return false;"
+					   onclick="window.location.href='/register/showRegistrationForm'; return false;"
 					   class="add-button"
 				/>
 			
@@ -51,7 +51,6 @@
 			<table>
 				<tr>
 					<th>Username</th>
-					
 					<%-- Only show "Action" column for managers or admin --%>
 					<security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
 					

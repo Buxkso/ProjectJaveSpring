@@ -1,5 +1,7 @@
 package com.luv2code.springdemo.entity;
 
+import org.hibernate.annotations.Formula;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,11 +21,18 @@ public class Author {
     @Column(name="surname")
     private String surname;
 
+    @Formula(value="concat(name,' ',surname)")
+    private String fullname;
+
     @OneToMany(mappedBy="theAuthor", cascade = CascadeType.ALL)
     private List<Book> book = new ArrayList<Book>();
 
     public Author(){
 
+    }
+
+    public String getFullname() {
+        return fullname;
     }
 
     public int getId() {

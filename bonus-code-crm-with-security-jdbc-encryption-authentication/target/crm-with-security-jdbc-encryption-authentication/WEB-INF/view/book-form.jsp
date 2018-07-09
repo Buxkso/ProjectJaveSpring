@@ -37,10 +37,19 @@
 						<td><label>Book name:</label></td>
 						<td><form:input path="name" /></td>
 					</tr>
+					<tr>
+						<td><label>Authors:</label></td>
+						<td><form:select path="theAuthor" items="${authors}" id="id" itemValue="id" itemLabel="fullname"/>
+
+						</td>
+					</tr>
 
 					<tr>
 						<td><label>Styles:</label></td>
-						<td><form:select path="styleList" items="${styles}" multiple="true"  id="style_id" itemValue="style_id" itemLabel="name"/>
+						<td><form:select path="styleList"  multiple="true" >
+							<form:option selected="true" value="1" label="select Style"/>
+							<form:options items="${styles}"  id="style_id" itemValue="style_id" itemLabel="name"/>
+						</form:select>
 
 						</td>
 					</tr>

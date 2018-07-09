@@ -1,5 +1,6 @@
 package com.luv2code.springdemo.controller;
 
+import com.luv2code.springdemo.entity.Author;
 import com.luv2code.springdemo.entity.Book;
 import com.luv2code.springdemo.entity.Style;
 import com.luv2code.springdemo.service.AuthorService;
@@ -47,6 +48,8 @@ public class BookController {
         // create model attribute to bind form data
         Book theBook = new Book();
         List<Style> theStyles = styleService.getStyles();
+        List<Author> theAuthors = authorService.getAuthors();
+        theModel.addAttribute("authors", theAuthors);
         theModel.addAttribute("styles", theStyles);
         theModel.addAttribute("book", theBook);
 
@@ -65,10 +68,12 @@ public class BookController {
              theBook = bookService.getBook(Integer.parseInt(identifier[0]));
         }
         String[] nm = request.getParameterValues("name");
-        String[] st= request.getParameterValues("styleList");
+        String[] st = request.getParameterValues("styleList");
+        String[] auth = request.getParameterValues("theAuthor");
         theBook.setName(nm[0]);
         theBook.setReserved(0);
         theBook.getStyleList().clear();
+        theBook.setTheAuthor(authorService.getAuthor(Integer.parseInt(auth[0])));
         for(int i=0; i<st.length;i++){
             theBook.addStyle(styleService.getStyle(Integer.parseInt(st[i])));
         }
@@ -84,10 +89,11 @@ public class BookController {
         // get the book from our service
         Book theBook = bookService.getBook(theId);
         List<Style> styles = styleService.getStyles();
-
+        List<Author> theAuthors = authorService.getAuthors();
         // set book as a model attribute to pre-populate the form
+
+        theModel.addAttribute("authors", theAuthors);
         theModel.addAttribute("styles",styles);
-        theModel.addAttribute("ownedStyles",theBook.getStyleList());
         theModel.addAttribute("book", theBook);
 
         // send over to our form		
