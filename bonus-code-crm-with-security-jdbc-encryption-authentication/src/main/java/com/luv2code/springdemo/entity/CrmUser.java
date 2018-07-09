@@ -1,6 +1,9 @@
 package com.luv2code.springdemo.entity;
 
 
+import org.hibernate.annotations.LazyCollection;
+import org.hibernate.annotations.LazyCollectionOption;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -20,11 +23,26 @@ public class CrmUser {
 	@Size(min=1, message="is required")
 	private String password;
 
+    @OneToMany(mappedBy="theUsernameAuth")
+    @LazyCollection(LazyCollectionOption.FALSE)
+    private List<Authority> auths = new ArrayList<>();
 
 	@OneToMany(mappedBy="theUsername")
 	private List<Book> book = new ArrayList<Book>();
 
-	public List<Book> getBook() {
+    public CrmUser() {
+
+    }
+
+    public List<Authority> getAuths() {
+        return auths;
+    }
+
+    public void setAuths(List<Authority> auths) {
+        this.auths = auths;
+    }
+
+    public List<Book> getBook() {
 		return book;
 	}
 
@@ -32,9 +50,7 @@ public class CrmUser {
 		this.book = book;
 	}
 
-	public CrmUser() {
 
-	}
 
 	public String getUserName() {
 		return userName;

@@ -9,7 +9,6 @@ import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.luv2code.springdemo.entity.CrmUser;
 
 @Repository
 public class CustomerDAOImpl implements CustomerDAO {
@@ -26,8 +25,8 @@ public class CustomerDAOImpl implements CustomerDAO {
 				
 		// create a query  ... sort by last name
 		Query<CrmUser> theQuery = 
-				currentSession.createQuery("from CrmUser c, Authority a where c.username like a.username order by a.username",
-											);
+				currentSession.createQuery("from CrmUser order by username",
+											CrmUser.class);
 		
 		// execute query and get result list
 		List<CrmUser> crmUsers = theQuery.getResultList();
@@ -67,7 +66,7 @@ public class CustomerDAOImpl implements CustomerDAO {
 		
 		// delete object with primary key
 		Query theQuery = 
-				currentSession.createQuery("delete from users where username like :crmUserId");
+				currentSession.createQuery("delete from CrmUser where username=:crmUserId");
 		theQuery.setParameter("crmUserId", theUsername);
 		
 		theQuery.executeUpdate();		
