@@ -67,6 +67,9 @@
 							<div class="col-sm-6 controls">
 								<button type="submit" class="btn btn-primary">Register</button>
 							</div>
+							<div class="col-sm-6 controls">
+								<a href="${pageContext.request.contextPath}/customer/list">Back to List</a>
+							</div>
 						</div>
 						
 					</form:form>

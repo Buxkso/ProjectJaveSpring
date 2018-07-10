@@ -19,7 +19,7 @@
 	
 	<div id="wrapper">
 		<div id="header">
-			<h2>CRM - Author Relationship Manager</h2>
+			<h2>Create new Author</h2>
 		</div>
 	</div>
 
@@ -48,11 +48,9 @@
 						<td><input type="submit" value="Save" class="save" /></td>
 					</tr>
 
-				
 				</tbody>
 			</table>
-		
-		
+
 		</form:form>
 	
 		<div style="clear; both;"></div>

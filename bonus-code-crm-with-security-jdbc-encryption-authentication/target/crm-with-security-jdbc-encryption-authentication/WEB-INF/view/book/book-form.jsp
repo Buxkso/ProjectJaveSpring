@@ -1,5 +1,5 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-
+<%@ include file = "../system/header.jsp" %>
 <!DOCTYPE html>
 <html>
 
@@ -34,19 +34,19 @@
 			<table>
 				<tbody>
 					<tr>
-						<td><label>Book name:</label></td>
-						<td><form:input path="name" /></td>
+						<td class="col-md-2"><label>Book name:</label></td>
+						<td class="col-md-5"><form:input path="name" /></td>
 					</tr>
 					<tr>
-						<td><label>Authors:</label></td>
-						<td><form:select path="theAuthor" items="${authors}" id="id" itemValue="id" itemLabel="fullname"/>
+						<td class="col-md-2"><label>Authors:</label></td>
+						<td class="col-md-5"><form:select path="theAuthor" items="${authors}" id="id" itemValue="id" itemLabel="fullname"/>
 
 						</td>
 					</tr>
 
 					<tr>
-						<td><label>Styles:</label></td>
-						<td><form:select path="styleList"  multiple="true" >
+						<td class="col-md-2"><label>Styles:</label></td>
+						<td class="col-md-5"><form:select path="styleList"  multiple="true" >
 							<form:option selected="true" value="1" label="select Style"/>
 							<form:options items="${styles}"  id="style_id" itemValue="style_id" itemLabel="name"/>
 						</form:select>
