@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class CartDAOImpl implements CartDAO{
+public class CartDAOImpl implements CartDAO {
 
     // need to inject the session factory
     @Autowired
@@ -40,7 +40,6 @@ public class CartDAOImpl implements CartDAO{
         // get current hibernate session
         Session currentSession = sessionFactory.getCurrentSession();
 
-        // save/upate the cart ... finally LOL
         currentSession.saveOrUpdate(theCart);
 
     }

@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Service
-public class StyleServiceImpl implements StyleService{
+public class StyleServiceImpl implements StyleService {
 
     // need to inject style dao
     @Autowired

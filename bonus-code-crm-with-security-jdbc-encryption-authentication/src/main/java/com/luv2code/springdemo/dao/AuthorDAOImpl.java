@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class AuthorDAOImpl implements AuthorDAO{
+public class AuthorDAOImpl implements AuthorDAO {
 
     // need to inject the session factory
     @Autowired
@@ -41,7 +41,6 @@ public class AuthorDAOImpl implements AuthorDAO{
         // get current hibernate session
         Session currentSession = sessionFactory.getCurrentSession();
 
-        // save/upate the author ... finally LOL
         currentSession.saveOrUpdate(theAuthor);
 
     }

@@ -42,7 +42,6 @@ public class AuthorController {
     @PostMapping("/saveAuthor")
     public String saveAuthor(@ModelAttribute("author") Author theAuthor) {
 
-        // save the author using our service
         authorService.saveAuthor(theAuthor);
 
         return "redirect:/author/list";
@@ -52,13 +51,10 @@ public class AuthorController {
     public String showFormForUpdate(@RequestParam("authorId") int theId,
                                     Model theModel) {
 
-        // get the author from our service
         Author theAuthor = authorService.getAuthor(theId);
 
-        // set author as a model attribute to pre-populate the form
         theModel.addAttribute("author", theAuthor);
 
-        // send over to our form		
         return "author/author-form";
     }
 

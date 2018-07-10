@@ -12,36 +12,36 @@ import com.luv2code.springdemo.dao.CustomerDAO;
 @Service
 public class CustomerServiceImpl implements CustomerService {
 
-	// need to inject customer dao
-	@Autowired
-	private CustomerDAO customerDAO;
-	
-	@Override
-	@Transactional
-	public List<CrmUser> getCrmUsers() {
-		return customerDAO.getCrmUsers();
-	}
+    // need to inject customer dao
+    @Autowired
+    private CustomerDAO customerDAO;
 
-	@Override
-	@Transactional
-	public void saveCrmUser(CrmUser thecrmUser) {
+    @Override
+    @Transactional
+    public List<CrmUser> getCrmUsers() {
+        return customerDAO.getCrmUsers();
+    }
 
-		customerDAO.saveCrmUser(thecrmUser);
-	}
+    @Override
+    @Transactional
+    public void saveCrmUser(CrmUser thecrmUser) {
 
-	@Override
-	@Transactional
-	public CrmUser getCrmUser(String theUsername) {
-		
-		return customerDAO.getCrmUser(theUsername);
-	}
+        customerDAO.saveCrmUser(thecrmUser);
+    }
 
-	@Override
-	@Transactional
-	public void deleteCrmUser(String theUsername) {
-		
-		customerDAO.deleteCrmUser(theUsername);
-	}
+    @Override
+    @Transactional
+    public CrmUser getCrmUser(String theUsername) {
+
+        return customerDAO.getCrmUser(theUsername);
+    }
+
+    @Override
+    @Transactional
+    public void deleteCrmUser(String theUsername) {
+
+        customerDAO.deleteCrmUser(theUsername);
+    }
 }
 
 

@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class BookDAOImpl implements BookDAO{
+public class BookDAOImpl implements BookDAO {
 
     // need to inject the session factory
     @Autowired
@@ -42,8 +42,7 @@ public class BookDAOImpl implements BookDAO{
 
         // create a query  ... sort by last name
         Query<Book> theQuery =
-                currentSession.createQuery("from Book where reserved=0",Book.class);
-
+                currentSession.createQuery("from Book where reserved=0", Book.class);
 
 
         // execute query and get result list
@@ -60,7 +59,6 @@ public class BookDAOImpl implements BookDAO{
         // get current hibernate session
         Session currentSession = sessionFactory.getCurrentSession();
 
-        // save/upate the book ... finally LOL
         currentSession.saveOrUpdate(theBook);
 
     }

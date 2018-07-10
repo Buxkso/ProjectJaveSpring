@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class StyleDAOImpl implements StyleDAO{
+public class StyleDAOImpl implements StyleDAO {
 
     // need to inject the session factory
     @Autowired
@@ -40,7 +40,6 @@ public class StyleDAOImpl implements StyleDAO{
         // get current hibernate session
         Session currentSession = sessionFactory.getCurrentSession();
 
-        // save/upate the style ... finally LOL
         currentSession.saveOrUpdate(theStyle);
 
     }

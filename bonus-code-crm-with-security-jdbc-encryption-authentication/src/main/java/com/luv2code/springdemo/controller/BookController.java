@@ -30,8 +30,6 @@ public class BookController {
     @Autowired
     private StyleService styleService;
 
-    @Autowired
-    private CartService cartService;
 
     @GetMapping("/list")
     public String listBooks(Model theModel) {
@@ -60,7 +58,7 @@ public class BookController {
 
     @GetMapping("/bookToCart")
     public String bookToCart(@RequestParam("bookId") int theId,
-                             Model theModel){
+                             Model theModel) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         CrmUser usr = customerService.getCrmUser(authentication.getName());
         Cart crt = usr.getUserCart();
@@ -72,14 +70,14 @@ public class BookController {
     }
 
     @PostMapping("/saveBook")
-    public String saveBook(HttpServletRequest request)throws ServletException,IOException {
+    public String saveBook(HttpServletRequest request) throws ServletException, IOException {
 
         String[] identifier = request.getParameterValues("book_id");
         Book theBook;
-        if(identifier[0].equals("0")) {
-             theBook = new Book();
-        }else{
-             theBook = bookService.getBook(Integer.parseInt(identifier[0]));
+        if (identifier[0].equals("0")) {
+            theBook = new Book();
+        } else {
+            theBook = bookService.getBook(Integer.parseInt(identifier[0]));
         }
         String[] nm = request.getParameterValues("name");
         String[] st = request.getParameterValues("styleList");
@@ -88,7 +86,7 @@ public class BookController {
         theBook.setReserved(0);
         theBook.getStyleList().clear();
         theBook.setTheAuthor(authorService.getAuthor(Integer.parseInt(auth[0])));
-        for(int i=0; i<st.length;i++){
+        for (int i = 0; i < st.length; i++) {
             theBook.addStyle(styleService.getStyle(Integer.parseInt(st[i])));
         }
         bookService.saveBook(theBook);
@@ -105,12 +103,10 @@ public class BookController {
         List<Style> styles = styleService.getStyles();
         List<Author> theAuthors = authorService.getAuthors();
 
-        // set book as a model attribute to pre-populate the form
         theModel.addAttribute("authors", theAuthors);
-        theModel.addAttribute("styles",styles);
+        theModel.addAttribute("styles", styles);
         theModel.addAttribute("book", theBook);
 
-        // send over to our form		
         return "book/book-form";
     }
 

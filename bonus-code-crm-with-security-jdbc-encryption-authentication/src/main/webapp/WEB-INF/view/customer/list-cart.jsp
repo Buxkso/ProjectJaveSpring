@@ -45,7 +45,7 @@
             <!-- loop over and print our customers -->
             <c:forEach var="tempBooks" items="${reservedBooks}">
                 <c:url var="cartRemove" value="/customer/cart-remove">
-                    <c:param name="bookId" value="${tempBooks.book_id}" />
+                    <c:param name="bookId" value="${tempBooks.book_id}"/>
                 </c:url>
 
                 <tr>
@@ -62,53 +62,53 @@
 
 </div>
 <c:if test="${fn:length(ownedBooks) > 0}">
-<h1>Owned Books</h1>
+    <h1>Owned Books</h1>
 
-<div id="container1">
+    <div id="container1">
 
-    <div id="content1">
+        <div id="content1">
 
-        <!--  add our html table here -->
+            <!--  add our html table here -->
 
 
-        <table class="table">
+            <table class="table">
 
-            <thead>
-            <tr>
-                <th scope="col">Name</th>
-                <th scope="col">Reserved_to</th>
-                <security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
-                    <th scope="col">Action</th>
-                </security:authorize>
-
-            </tr>
-            </thead>
-
-            <tbody>
-
-            <!-- loop over and print our customers -->
-            <c:forEach var="ownedBooks" items="${ownedBooks}">
-                <c:url var="cartReturn" value="/customer/return-book">
-                    <c:param name="bookId" value="${ownedBooks.book_id}" />
-                </c:url>
-
+                <thead>
                 <tr>
-                    <td scope="row"> ${ownedBooks.name} </td>
-                    <td scope="row"> ${ownedBooks.reserved_to} </td>
+                    <th scope="col">Name</th>
+                    <th scope="col">Reserved_to</th>
                     <security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
-                        <td scope="row"><a href="${cartReturn}">Return</a>
-                        </td>
+                        <th scope="col">Action</th>
                     </security:authorize>
 
                 </tr>
+                </thead>
 
-            </c:forEach>
+                <tbody>
 
-            </tbody>
-        </table>
+                <!-- loop over and print our customers -->
+                <c:forEach var="ownedBooks" items="${ownedBooks}">
+                    <c:url var="cartReturn" value="/customer/return-book">
+                        <c:param name="bookId" value="${ownedBooks.book_id}"/>
+                    </c:url>
+
+                    <tr>
+                        <td scope="row"> ${ownedBooks.name} </td>
+                        <td scope="row"> ${ownedBooks.reserved_to} </td>
+                        <security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
+                            <td scope="row"><a href="${cartReturn}">Return</a>
+                            </td>
+                        </security:authorize>
+
+                    </tr>
+
+                </c:forEach>
+
+                </tbody>
+            </table>
+        </div>
+
     </div>
-
-</div>
 </c:if>
 
 

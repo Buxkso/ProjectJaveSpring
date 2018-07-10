@@ -7,27 +7,27 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name="authors")
+@Table(name = "authors")
 public class Author {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
-    @Column(name="id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private int id;
 
-    @Column(name="name")
+    @Column(name = "name")
     private String name;
 
-    @Column(name="surname")
+    @Column(name = "surname")
     private String surname;
 
-    @Formula(value="concat(name,' ',surname)")
+    @Formula(value = "concat(name,' ',surname)")
     private String fullname;
 
-    @OneToMany(mappedBy="theAuthor", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "theAuthor", cascade = CascadeType.ALL)
     private List<Book> book = new ArrayList<>();
 
-    public Author(){
+    public Author() {
 
     }
 

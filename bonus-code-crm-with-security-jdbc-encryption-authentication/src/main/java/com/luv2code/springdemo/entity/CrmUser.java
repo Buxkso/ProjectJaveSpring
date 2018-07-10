@@ -11,42 +11,42 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name="users")
+@Table(name = "users")
 public class CrmUser {
 
-	@Id
-	@NotNull(message="is required")
-	@Size(min=1, message="is required")	
-	private String userName;
-	
-	@NotNull(message="is required")
-	@Size(min=1, message="is required")
-	private String password;
+    @Id
+    @NotNull(message = "is required")
+    @Size(min = 1, message = "is required")
+    private String userName;
 
-    @OneToMany(mappedBy="theUsernameAuth")
+    @NotNull(message = "is required")
+    @Size(min = 1, message = "is required")
+    private String password;
+
+    @OneToMany(mappedBy = "theUsernameAuth")
     @LazyCollection(LazyCollectionOption.FALSE)
     private List<Authority> auths = new ArrayList<>();
 
-	@OneToMany(mappedBy="theUsername")
-	@LazyCollection(LazyCollectionOption.FALSE)
-	private List<Book> book = new ArrayList<>();
+    @OneToMany(mappedBy = "theUsername")
+    @LazyCollection(LazyCollectionOption.FALSE)
+    private List<Book> book = new ArrayList<>();
 
-    @OneToOne(mappedBy="cartOfUser")
+    @OneToOne(mappedBy = "cartOfUser")
     private Cart userCart;
 
     public CrmUser() {
 
     }
 
-	public Cart getUserCart() {
-		return userCart;
-	}
+    public Cart getUserCart() {
+        return userCart;
+    }
 
-	public void setUserCart(Cart userCart) {
-		this.userCart = userCart;
-	}
+    public void setUserCart(Cart userCart) {
+        this.userCart = userCart;
+    }
 
-	public List<Authority> getAuths() {
+    public List<Authority> getAuths() {
         return auths;
     }
 
@@ -56,29 +56,29 @@ public class CrmUser {
 
 
     public List<Book> getBook() {
-		return book;
-	}
+        return book;
+    }
 
-	public void setBook(List<Book> book) {
-		this.book = book;
-	}
+    public void setBook(List<Book> book) {
+        this.book = book;
+    }
 
 
-	public String getUserName() {
-		return userName;
-	}
+    public String getUserName() {
+        return userName;
+    }
 
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
 
-	public String getPassword() {
-		return password;
-	}
+    public String getPassword() {
+        return password;
+    }
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
-	
+
 }

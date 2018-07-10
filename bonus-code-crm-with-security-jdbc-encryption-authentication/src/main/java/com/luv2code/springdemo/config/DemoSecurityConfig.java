@@ -16,52 +16,61 @@ import org.springframework.security.provisioning.UserDetailsManager;
 @EnableWebSecurity
 public class DemoSecurityConfig extends WebSecurityConfigurerAdapter {
 
-	// add a reference to our security data source
-	
-	@Autowired
-	private DataSource securityDataSource;
-	
-	@Override
-	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+    // add a reference to our security data source
 
-		// use jdbc authentication ... oh yeah!!!
-		
-		auth.jdbcAuthentication().dataSource(securityDataSource);
+    @Autowired
+    private DataSource securityDataSource;
 
-	}
+    @Override
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 
-	@Override
-	protected void configure(HttpSecurity http) throws Exception {
+        // use jdbc authentication ... oh yeah!!!
 
-		http.authorizeRequests()
-			.antMatchers("/customer/showForm*").hasAnyRole("MANAGER", "ADMIN")
-			.antMatchers("/customer/save*").hasAnyRole("MANAGER", "ADMIN")
-			.antMatchers("/customer/delete").hasRole("ADMIN")
-			.antMatchers("/customer/**").hasRole("CUSTOMER")
-				.antMatchers("/register/**").hasRole("ADMIN")
-			.antMatchers("/resources/**").permitAll()
-			.and()
-			.formLogin()
-				.loginPage("/showMyLoginPage")
-				.loginProcessingUrl("/authenticateTheUser")
-				.permitAll()
-			.and()
-			.logout().permitAll()
-			.and()
-			.exceptionHandling().accessDeniedPage("/access-denied");
-		
-	}
-	
-	@Bean
-	public UserDetailsManager userDetailsManager() {
-		
-		JdbcUserDetailsManager jdbcUserDetailsManager = new JdbcUserDetailsManager();
-		
-		jdbcUserDetailsManager.setDataSource(securityDataSource);
-		
-		return jdbcUserDetailsManager; 
-	}
-		
+        auth.jdbcAuthentication().dataSource(securityDataSource);
+
+    }
+
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+
+        http.authorizeRequests()
+                .antMatchers("/customer/showForm*").hasAnyRole("MANAGER", "ADMIN")
+                .antMatchers("/customer/save*").hasAnyRole("MANAGER", "ADMIN")
+                .antMatchers("/customer/delete").hasRole("ADMIN")
+                .antMatchers("/customer/**").hasRole("CUSTOMER")
+                .antMatchers("/register/**").hasRole("ADMIN")
+                .antMatchers("/author/delete").hasRole("ADMIN")
+                .antMatchers("/book/delete").hasRole("ADMIN")
+                .antMatchers("/style/delete").hasRole("ADMIN")
+                .antMatchers("/style/showFormForUpdate").hasAnyRole("MANAGER", "ADMIN")
+                .antMatchers("/author/showFormForUpdate").hasAnyRole("MANAGER", "ADMIN")
+                .antMatchers("/book/showFormForUpdate").hasAnyRole("MANAGER", "ADMIN")
+                .antMatchers("/author/saveAuthor").hasAnyRole("MANAGER", "ADMIN")
+                .antMatchers("/book/saveBook").hasAnyRole("MANAGER", "ADMIN")
+                .antMatchers("/style/saveStyle").hasAnyRole("MANAGER", "ADMIN")
+                .antMatchers("/resources/**").permitAll()
+                .and()
+                .formLogin()
+                .loginPage("/showMyLoginPage")
+                .loginProcessingUrl("/authenticateTheUser")
+                .permitAll()
+                .and()
+                .logout().permitAll()
+                .and()
+                .exceptionHandling().accessDeniedPage("/access-denied");
+
+    }
+
+    @Bean
+    public UserDetailsManager userDetailsManager() {
+
+        JdbcUserDetailsManager jdbcUserDetailsManager = new JdbcUserDetailsManager();
+
+        jdbcUserDetailsManager.setDataSource(securityDataSource);
+
+        return jdbcUserDetailsManager;
+    }
+
 }
 
 

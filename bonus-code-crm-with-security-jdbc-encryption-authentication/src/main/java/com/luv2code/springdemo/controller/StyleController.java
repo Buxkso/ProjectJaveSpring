@@ -55,10 +55,8 @@ public class StyleController {
         // get the style from our service
         Style theStyle = styleService.getStyle(theId);
 
-        // set style as a model attribute to pre-populate the form
         theModel.addAttribute("style", theStyle);
 
-        // send over to our form		
         return "style/style-form";
     }
 

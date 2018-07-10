@@ -7,19 +7,19 @@ import javax.persistence.*;
 import java.util.*;
 
 @Entity
-@Table(name="books")
+@Table(name = "books")
 public class Book {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
-    @Column(name="book_id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "book_id")
     private int book_id;
 
-    @Column(name="name")
+    @Column(name = "name")
     private String name;
 
     @ManyToOne
-    @JoinColumn(name="author")
+    @JoinColumn(name = "author")
     private Author theAuthor;
 
     @ManyToOne
@@ -29,14 +29,14 @@ public class Book {
 
 
     @Temporal(TemporalType.DATE)
-    @Column(name="reserved_from")
+    @Column(name = "reserved_from")
     private Date reserved_from;
 
     @Temporal(TemporalType.DATE)
-    @Column(name="reserved_to")
+    @Column(name = "reserved_to")
     private Date reserved_to;
 
-    @Column(name="reserved")
+    @Column(name = "reserved")
     private int reserved;
 
 
@@ -45,12 +45,12 @@ public class Book {
     private CrmUser theUsername;
 
 
-    @ManyToMany(cascade = { CascadeType.ALL },fetch = FetchType.EAGER)
-    @JoinTable(name="book_style",joinColumns = {@JoinColumn(name="book_id")},
-            inverseJoinColumns = {@JoinColumn(name="style_id")})
+    @ManyToMany(cascade = {CascadeType.ALL}, fetch = FetchType.EAGER)
+    @JoinTable(name = "book_style", joinColumns = {@JoinColumn(name = "book_id")},
+            inverseJoinColumns = {@JoinColumn(name = "style_id")})
     private List<Style> styleList = new ArrayList<>();
 
-    public Book(){
+    public Book() {
 
     }
 
@@ -126,8 +126,8 @@ public class Book {
         this.styleList = styleList;
     }
 
-    public void addStyle(Style theStyle){
-        if(styleList == null){
+    public void addStyle(Style theStyle) {
+        if (styleList == null) {
             styleList = new ArrayList<>();
         }
         styleList.add(theStyle);

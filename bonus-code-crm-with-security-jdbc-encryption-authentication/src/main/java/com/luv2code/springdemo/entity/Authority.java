@@ -6,29 +6,29 @@ import org.hibernate.annotations.LazyCollectionOption;
 import javax.persistence.*;
 
 @Entity
-@Table(name="authorities")
+@Table(name = "authorities")
 public class Authority {
 
-	@Id
-	@Column(name="authority")
-	private String role;
+    @Id
+    @Column(name = "authority")
+    private String role;
 
-	@ManyToOne
-	@JoinColumn(name = "username")
-	@LazyCollection(LazyCollectionOption.TRUE)
-	private CrmUser theUsernameAuth;
+    @ManyToOne
+    @JoinColumn(name = "username")
+    @LazyCollection(LazyCollectionOption.TRUE)
+    private CrmUser theUsernameAuth;
 
-	public Authority(){
+    public Authority() {
 
-	}
+    }
 
-	public String getRole() {
-		return role;
-	}
+    public String getRole() {
+        return role;
+    }
 
-	public void setRole(String role) {
-		this.role = role;
-	}
+    public void setRole(String role) {
+        this.role = role;
+    }
 
 }
 

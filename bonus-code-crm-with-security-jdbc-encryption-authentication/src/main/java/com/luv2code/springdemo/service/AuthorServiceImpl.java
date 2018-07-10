@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Service
-public class AuthorServiceImpl implements AuthorService{
+public class AuthorServiceImpl implements AuthorService {
 
     // need to inject author dao
     @Autowired
