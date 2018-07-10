@@ -20,7 +20,7 @@ public class Style {
     private String name;
 
     @ManyToMany(mappedBy = "styleList",fetch = FetchType.LAZY)
-    private List<Book> bookList = new ArrayList<Book>();
+    private List<Book> bookList = new ArrayList<>();
 
     public Style(){
 

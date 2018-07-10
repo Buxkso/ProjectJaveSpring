@@ -20,50 +20,50 @@
 
 <body>
 
-	<div id="wrapper">
-		<div id="header">
-			<h2>CRM - Book Relationship Manager</h2>
-		</div>
-	</div>
-	
-	<div id="container">
-	
-		<div id="content">
+<h1>List Books</h1>
+
+<div id="container">
+
+	<div id="content">
 			
 
 			<security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
 			
 				<!-- put new button: Add Book -->
-			
-				<input type="button" value="Add Book"
-					   onclick="window.location.href='showFormForAdd'; return false;"
-					   class="add-button"
-				/>
+
+				<button onclick="window.location.href='showFormForAdd'; return false;" type="button" class="btn btn-outline-primary"> Add
+					Book
+				</button>
+
 			
 			</security:authorize>
-	
+		<br>
 		
 			<!--  add our html table here -->
-		
-			<table>
+
+		<table class="table">
+
+			<thead>
 				<tr>
-					<th>Name</th>
-					<th>Reserved</th>
-					<th>Reserved_from</th>
-					<th>Reserved_to</th>
-					<th>Owner</th>
-					<th>Author</th>
-					<th>Styles</th>
+					<th scope="col">Name</th>
+					<th scope="col">Reserved</th>
+					<th scope="col">Reserved_from</th>
+					<th scope="col">Reserved_to</th>
+					<th scope="col">Owner</th>
+					<th scope="col">Author</th>
+					<th scope="col">Styles</th>
 					
 					<%-- Only show "Action" column for managers or admin --%>
 					<security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
-					
-						<th>Action</th>
+
+						<th scope="col">Action</th>
 					
 					</security:authorize>
 					
 				</tr>
-				
+			</thead>
+
+			<tbody>
 				<!-- loop over and print our books -->
 				<c:forEach var="tempBook" items="${books}">
 				
@@ -82,13 +82,13 @@
 
 
 					<tr>
-						<td> ${tempBook.name} </td>
-						<td> ${tempBook.reserved} </td>
-						<td> ${tempBook.reserved_from} </td>
-						<td> ${tempBook.reserved_to} </td>
-						<td> ${tempBook.theUsername} </td>
-						<td> ${tempBook.theAuthor.fullname} </td>
-						<td>
+						<td scope="row"> ${tempBook.name} </td>
+						<td scope="row"> ${tempBook.reserved} </td>
+						<td scope="row"> ${tempBook.reserved_from} </td>
+						<td scope="row"> ${tempBook.reserved_to} </td>
+						<td scope="row"> ${tempBook.theUsername} </td>
+						<td scope="row"> ${tempBook.theAuthor.fullname} </td>
+						<td scope="row">
 
 								<c:forEach var="tempStyle" items="${tempBook.styleList}">
 
@@ -99,8 +99,8 @@
 					</td>
 
 						<security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
-						
-							<td>
+
+						<td scope="row">
 								<security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
 									<!-- display the update link -->
 									<a href="${updateLink}">Update</a>
@@ -120,22 +120,12 @@
 					</tr>
 				
 				</c:forEach>
-						
+			</tbody>
 			</table>
 				
 		</div>
 	
 	</div>
-	
-	<p></p>
-		
-	<!-- Add a logout button -->
-	<form:form action="${pageContext.request.contextPath}/logout" 
-			   method="POST">
-	
-		<input type="submit" value="Logout" class="add-button" />
-	
-	</form:form>
 
 </body>
 

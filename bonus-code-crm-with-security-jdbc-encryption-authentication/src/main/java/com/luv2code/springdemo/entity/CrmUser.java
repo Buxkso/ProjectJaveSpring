@@ -28,7 +28,7 @@ public class CrmUser {
     private List<Authority> auths = new ArrayList<>();
 
 	@OneToMany(mappedBy="theUsername")
-	private List<Book> book = new ArrayList<Book>();
+	private List<Book> book = new ArrayList<>();
 
     @OneToOne(mappedBy="cartOfUser")
     private Cart userCart;

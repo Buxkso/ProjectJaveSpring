@@ -39,6 +39,9 @@
             <button onclick="window.location.href='/register/showRegistrationForm'; return false;" type="button" class="btn btn-outline-primary"> Add
                 Customer
             </button>
+            <%--<div>
+                <a href="${pageContext.request.contextPath}/register/showRegistrationForm" class="btn btn-outline-primary" role="button" aria-pressed="true">Add Customer</a>
+            </div>--%>
 
         </security:authorize>
         <br>
@@ -62,11 +65,18 @@
 
             <!-- loop over and print our customers -->
             <c:forEach var="tempCustomer" items="${customers}">
-
+                <c:url var="updateLink" value="/customer/showFormForUpdate">
+                    <c:param name="customerId" value="${tempCustomer.userName}" />
+                </c:url>
+                <c:url var="shCart" value="/customer/showUserCart">
+                    <c:param name="customerId" value="${tempCustomer.userName}" />
+                </c:url>
 
                 <tr>
                     <td scope="row"> ${tempCustomer.userName} </td>
-
+                    <security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
+                    <td scope="row"><a href="${updateLink}">Confirm Cart | </a><a href="${shCart}">Show Cart</a></td>
+                    </security:authorize>
                 </tr>
 
             </c:forEach>

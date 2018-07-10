@@ -65,6 +65,7 @@ public class BookController {
         CrmUser usr = customerService.getCrmUser(authentication.getName());
         Cart crt = usr.getUserCart();
         Book bk = bookService.getBook(theId);
+        bk.setReserved(1);
         bk.setTheCart(crt);
         bookService.saveBook(bk);
         return "redirect:/book/list";

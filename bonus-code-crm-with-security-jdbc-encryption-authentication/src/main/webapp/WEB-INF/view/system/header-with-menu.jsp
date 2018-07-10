@@ -49,14 +49,15 @@
                 <li><a href="/customer/list">Customer</a></li>
                 <li><a href="/book/list">Book</a></li>
                 <li><a href="/style/list">Style</a></li>
+               <li><a href="/customer/cart">Cart</a></li>
 
             </ul>
 
             <ul class="nav navbar-nav navbar-right" >
             <li>
                 <form:form action="${pageContext.request.contextPath}/logout"
-                           method="POST">
-                    <input type="submit" value="Logout" class="add-button" />
+                           method="POST" >
+                    <input type="submit" value="Logout" id="logoutButton"/>
                 </form:form>
             </li>
             </ul>
