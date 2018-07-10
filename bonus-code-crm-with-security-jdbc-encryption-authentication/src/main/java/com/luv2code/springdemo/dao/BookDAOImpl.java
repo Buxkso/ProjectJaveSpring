@@ -35,6 +35,26 @@ public class BookDAOImpl implements BookDAO{
     }
 
     @Override
+    public List<Book> getBooksByUsr() {
+
+        // get the current hibernate session
+        Session currentSession = sessionFactory.getCurrentSession();
+
+        // create a query  ... sort by last name
+        Query<Book> theQuery =
+                currentSession.createQuery("from Book where reserved=0",Book.class);
+
+
+
+        // execute query and get result list
+        List<Book> books = theQuery.getResultList();
+
+        // return the results
+        return books;
+    }
+
+
+    @Override
     public void saveBook(Book theBook) {
 
         // get current hibernate session

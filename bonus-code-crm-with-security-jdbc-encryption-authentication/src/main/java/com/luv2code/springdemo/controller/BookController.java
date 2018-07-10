@@ -37,7 +37,7 @@ public class BookController {
     public String listBooks(Model theModel) {
 
         // get books from the service
-        List<Book> theBooks = bookService.getBooks();
+        List<Book> theBooks = bookService.getBooksByUsr();
         // add the books to the model
         theModel.addAttribute("books", theBooks);
 

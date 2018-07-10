@@ -22,81 +22,80 @@
 
     <link type="text/css"
           rel="stylesheet"
-          href="${pageContext.request.contextPath}/resources/css/style.css" />
+          href="${pageContext.request.contextPath}/resources/css/style.css"/>
 
 </head>
 
 <body>
 
-<div id="wrapper">
-    <div id="header">
-        <h2>CRM - Author Relationship Manager</h2>
-    </div>
-</div>
+<h1>List Authors</h1>
 
 <div id="container">
 
     <div id="content">
-        
 
 
         <security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
 
             <!-- put new button: Add Author -->
 
-            <input type="button" value="Add Author"
-                   onclick="window.location.href='showFormForAdd'; return false;"
-                   class="add-button"
-            />
+            <button onclick="window.location.href='showFormForAdd'; return false;" type="button"
+                    class="btn btn-outline-primary"> Add Author
+            </button>
 
         </security:authorize>
-
+        <br>
 
         <!--  add our html table here -->
 
-        <table>
+        <table class="table">
+
+            <thead>
             <tr>
-                <th>Name</th>
-                <th>Surname</th>
+                <th scope="col">Name</th>
+                <th scope="col">Surname</th>
 
                 <%-- Only show "Action" column for managers or admin --%>
                 <security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
 
-                    <th>Action</th>
+                    <th scope="col">Action</th>
 
                 </security:authorize>
 
             </tr>
 
+            </thead>
+
+            <tbody>
             <!-- loop over and print our authors -->
             <c:forEach var="tempAuthor" items="${authors}">
 
                 <!-- construct an "update" link with author id -->
                 <c:url var="updateLink" value="/author/showFormForUpdate">
-                    <c:param name="authorId" value="${tempAuthor.id}" />
+                    <c:param name="authorId" value="${tempAuthor.id}"/>
                 </c:url>
 
                 <!-- construct an "delete" link with author id -->
                 <c:url var="deleteLink" value="/author/delete">
-                    <c:param name="authorId" value="${tempAuthor.id}" />
+                    <c:param name="authorId" value="${tempAuthor.id}"/>
                 </c:url>
 
                 <tr>
-                    <td> ${tempAuthor.name} </td>
-                    <td> ${tempAuthor.surname} </td>
-                 
+                    <td scope="row"> ${tempAuthor.name} </td>
+                    <td scope="row"> ${tempAuthor.surname} </td>
+
 
                     <security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
 
-                        <td>
-                            <security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
-                                <!-- display the update link -->
-                                <a href="${updateLink}">Update</a>
-                            </security:authorize>
+                        <td scope="row">
+                            <!-- display the update link -->
+                            <a href="${updateLink}">Update </a>
+
 
                             <security:authorize access="hasAnyRole('ADMIN')">
                                 <a href="${deleteLink}"
-                                   onclick="if (!(confirm('Are you sure you want to delete this author?'))) return false">Delete</a>
+                                   onclick="if (!(confirm('Are you sure you want to delete this author?'))) return false">
+                                    Delete</a>
                             </security:authorize>
                         </td>
 
@@ -105,22 +104,12 @@
                 </tr>
 
             </c:forEach>
-
+            </tbody>
         </table>
 
     </div>
 
 </div>
-
-<p></p>
-
-<!-- Add a logout button -->
-<form:form action="${pageContext.request.contextPath}/logout"
-           method="POST">
-
-    <input type="submit" value="Logout" class="add-button" />
-
-</form:form>
 
 </body>
 

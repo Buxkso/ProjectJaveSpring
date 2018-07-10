@@ -28,45 +28,43 @@
 
 <body>
 
-<div id="wrapper">
-    <div id="header">
-        <h2>CRM - Style Relationship Manager</h2>
-    </div>
-</div>
+<h1>List Styles</h1>
 
 <div id="container">
 
     <div id="content">
         
 
-
         <security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
 
             <!-- put new button: Add Style -->
 
-            <input type="button" value="Add Style"
-                   onclick="window.location.href='showFormForAdd'; return false;"
-                   class="add-button"
-            />
+            <button onclick="window.location.href='showFormForAdd'; return false;" type="button" class="btn btn-outline-primary"> Add Style
+            </button>
 
         </security:authorize>
 
-
+        <br>
         <!--  add our html table here -->
 
-        <table>
+        <table class="table">
+
+            <thead>
             <tr>
-                <th>Name</th>
+                <th scope="col">Name</th>
 
 
                 <%-- Only show "Action" column for managers or admin --%>
                 <security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
 
-                    <th>Action</th>
+                    <th scope="col">Action</th>
 
                 </security:authorize>
 
             </tr>
+            </thead>
+
+            <tbody>
 
             <!-- loop over and print our authors -->
             <c:forEach var="tempStyle" items="${styles}">
@@ -82,20 +80,20 @@
                 </c:url>
 
                 <tr>
-                    <td> ${tempStyle.name} </td>
+                    <td scope="row"> ${tempStyle.name} </td>
                  
 
                     <security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
 
-                        <td>
+                        <td scope="row">
                             <security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
                                 <!-- display the update link -->
-                                <a href="${updateLink}">Update</a>
+                                <a href="${updateLink}">Update </a>
                             </security:authorize>
 
                             <security:authorize access="hasAnyRole('ADMIN')">
                                 <a href="${deleteLink}"
-                                   onclick="if (!(confirm('Are you sure you want to delete this author?'))) return false">Delete</a>
+                                   onclick="if (!(confirm('Are you sure you want to delete this style?'))) return false"> Delete</a>
                             </security:authorize>
                         </td>
 
@@ -104,22 +102,13 @@
                 </tr>
 
             </c:forEach>
-
+            </tbody>
         </table>
 
     </div>
 
 </div>
 
-<p></p>
-
-<!-- Add a logout button -->
-<form:form action="${pageContext.request.contextPath}/logout"
-           method="POST">
-
-    <input type="submit" value="Logout" class="add-button" />
-
-</form:form>
 
 </body>
 

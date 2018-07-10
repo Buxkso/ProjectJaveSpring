@@ -51,13 +51,8 @@ public class CustomerController {
 		String usrnm = authentication.getName();
 		CrmUser usr = customerService.getCrmUser(usrnm);
 		List<Book> reservedBooks = usr.getUserCart().getBookList();
-		List<Book> ownedBooks ;
-		try {
-			usr.getBook().get(0);
-			ownedBooks=usr.getBook();
-		} catch(LazyInitializationException e){
-			ownedBooks= new ArrayList<>();
-		}
+		List<Book> ownedBooks = usr.getBook();
+
 		theModel.addAttribute("ownedBooks", ownedBooks);
 		theModel.addAttribute("reservedBooks", reservedBooks);
 		return "customer/list-cart";
@@ -68,13 +63,8 @@ public class CustomerController {
 									Model theModel) {
 		CrmUser usr = customerService.getCrmUser(theId);
 		List<Book> reservedBooks = usr.getUserCart().getBookList();
-		List<Book> ownedBooks;
-		try {
-			usr.getBook().get(0);
-			ownedBooks=usr.getBook();
-		} catch(LazyInitializationException e){
-			ownedBooks= new ArrayList<>();
-		}
+		List<Book> ownedBooks = usr.getBook();
+
 		theModel.addAttribute("ownedBooks", ownedBooks);
 		theModel.addAttribute("reservedBooks", reservedBooks);
 		return "customer/list-cart";

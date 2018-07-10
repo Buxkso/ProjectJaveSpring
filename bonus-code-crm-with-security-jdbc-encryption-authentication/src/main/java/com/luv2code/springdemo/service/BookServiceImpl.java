@@ -23,6 +23,12 @@ public class BookServiceImpl implements BookService{
 
     @Override
     @Transactional
+    public List<Book> getBooksByUsr() {
+        return bookDAO.getBooksByUsr();
+    }
+
+    @Override
+    @Transactional
     public void saveBook(Book theBook) {
 
         bookDAO.saveBook(theBook);

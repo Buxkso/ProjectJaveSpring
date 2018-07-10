@@ -28,6 +28,7 @@ public class CrmUser {
     private List<Authority> auths = new ArrayList<>();
 
 	@OneToMany(mappedBy="theUsername")
+	@LazyCollection(LazyCollectionOption.FALSE)
 	private List<Book> book = new ArrayList<>();
 
     @OneToOne(mappedBy="cartOfUser")

@@ -54,12 +54,7 @@
 					<th scope="col">Styles</th>
 					
 					<%-- Only show "Action" column for managers or admin --%>
-					<security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
-
 						<th scope="col">Action</th>
-					
-					</security:authorize>
-					
 				</tr>
 			</thead>
 
@@ -98,13 +93,13 @@
 
 					</td>
 
-						<security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
+
 
 						<td scope="row">
-								<security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
+							<security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
+
 									<!-- display the update link -->
 									<a href="${updateLink}">Update</a>
-								</security:authorize>
 	
 								<security:authorize access="hasAnyRole('ADMIN')">
 									<a href="${deleteLink}"
