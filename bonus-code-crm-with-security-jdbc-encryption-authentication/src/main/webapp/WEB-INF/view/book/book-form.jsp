@@ -1,5 +1,5 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%@ include file="../system/header.jsp" %>
+<%@ include file="../system/header-with-menu.jsp" %>
 <!DOCTYPE html>
 <html>
 
@@ -26,7 +26,7 @@
 <div id="container">
     <h3>Save Book</h3>
 
-    <form:form action="saveBook" modelAttribute="book" method="POST">
+    <form:form action="${pageContext.request.contextPath}/book/saveBook" modelAttribute="book" method="POST">
 
         <!-- need to associate this data with book id -->
         <form:hidden path="book_id" id="book_id"/>

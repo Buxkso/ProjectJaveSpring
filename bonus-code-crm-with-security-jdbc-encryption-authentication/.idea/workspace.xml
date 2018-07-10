@@ -8,50 +8,56 @@
   <component name="ChangeListManager">
     <list default="true" id="b212212f-1fd8-4b30-8baf-fa6023807115" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/config/DemoSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/config/DemoSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/config/MySpringMvcDispatcherServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/config/MySpringMvcDispatcherServletInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/config/SecurityWebApplicationInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/config/SecurityWebApplicationInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/AuthorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/AuthorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/CustomerController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/StyleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/StyleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/dao/AuthorDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/dao/AuthorDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/dao/BookDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/dao/BookDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/dao/CartDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/dao/CartDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/dao/CustomerDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/dao/CustomerDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/dao/StyleDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/dao/StyleDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/entity/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/entity/Author.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/entity/Authority.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/entity/Authority.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/entity/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/entity/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/entity/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/entity/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/entity/CrmUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/entity/CrmUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/entity/Style.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/entity/Style.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/service/AuthorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/service/AuthorServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/service/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/service/BookServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/service/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/service/CartServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/service/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/service/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/service/StyleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/service/StyleServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/author/author-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/author/author-form.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/book/book-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/book/book-form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/book/list-books.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/book/list-books.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/customer/list-cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/customer/list-cart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/customer/list-customers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/customer/list-customers.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/registration/fancy-login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/registration/fancy-login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/registration/registration-confirmation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/registration/registration-confirmation.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/registration/registration-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/registration/registration-form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/style/list-styles.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/style/list-styles.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/style/style-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/style/style-form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/system/access-denied.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/system/access-denied.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/system/header-with-menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/system/header-with-menu.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/system/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/system/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/users/userRoles.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/users/userRoles.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/add-customer-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/add-customer-style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/luv2code/springdemo/config/DemoSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/luv2code/springdemo/config/DemoSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/luv2code/springdemo/controller/AuthorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/luv2code/springdemo/controller/AuthorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/luv2code/springdemo/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/luv2code/springdemo/controller/BookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/luv2code/springdemo/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/luv2code/springdemo/controller/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/luv2code/springdemo/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/luv2code/springdemo/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/luv2code/springdemo/controller/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/luv2code/springdemo/controller/RegistrationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/luv2code/springdemo/controller/StyleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/luv2code/springdemo/controller/StyleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/luv2code/springdemo/dao/AuthorDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/luv2code/springdemo/dao/AuthorDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/luv2code/springdemo/dao/BookDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/luv2code/springdemo/dao/BookDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/luv2code/springdemo/dao/CartDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/luv2code/springdemo/dao/CartDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/luv2code/springdemo/dao/CustomerDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/luv2code/springdemo/dao/CustomerDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/luv2code/springdemo/dao/StyleDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/luv2code/springdemo/dao/StyleDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/luv2code/springdemo/entity/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/luv2code/springdemo/entity/Cart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/luv2code/springdemo/entity/Style.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/luv2code/springdemo/entity/Style.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/classes/com/luv2code/springdemo/config/DemoSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/classes/com/luv2code/springdemo/config/DemoSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/classes/com/luv2code/springdemo/controller/AuthorController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/classes/com/luv2code/springdemo/controller/AuthorController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/classes/com/luv2code/springdemo/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/classes/com/luv2code/springdemo/controller/BookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/classes/com/luv2code/springdemo/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/classes/com/luv2code/springdemo/controller/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/classes/com/luv2code/springdemo/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/classes/com/luv2code/springdemo/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/classes/com/luv2code/springdemo/controller/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/classes/com/luv2code/springdemo/controller/RegistrationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/classes/com/luv2code/springdemo/controller/StyleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/classes/com/luv2code/springdemo/controller/StyleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/classes/com/luv2code/springdemo/dao/AuthorDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/classes/com/luv2code/springdemo/dao/AuthorDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/classes/com/luv2code/springdemo/dao/BookDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/classes/com/luv2code/springdemo/dao/BookDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/classes/com/luv2code/springdemo/dao/CartDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/classes/com/luv2code/springdemo/dao/CartDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/classes/com/luv2code/springdemo/dao/CustomerDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/classes/com/luv2code/springdemo/dao/CustomerDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/classes/com/luv2code/springdemo/dao/StyleDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/classes/com/luv2code/springdemo/dao/StyleDAOImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/classes/com/luv2code/springdemo/entity/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/classes/com/luv2code/springdemo/entity/Cart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/classes/com/luv2code/springdemo/entity/Style.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/classes/com/luv2code/springdemo/entity/Style.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/view/author/author-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/view/author/author-form.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/view/book/book-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/view/book/book-form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/view/book/list-books.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/view/book/list-books.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/view/customer/list-cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/view/customer/list-cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/view/customer/list-customers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/view/customer/list-customers.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/view/registration/fancy-login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/view/registration/fancy-login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/view/registration/registration-confirmation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/view/registration/registration-confirmation.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/view/registration/registration-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/view/registration/registration-form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/view/style/list-styles.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/view/style/list-styles.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/view/style/style-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/view/style/style-form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/view/system/access-denied.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/view/system/access-denied.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/view/system/header-with-menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/view/system/header-with-menu.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/view/system/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/view/system/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/view/users/userRoles.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/WEB-INF/view/users/userRoles.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/resources/css/add-customer-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/resources/css/add-customer-style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/resources/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/crm-with-security-jdbc-encryption-authentication/resources/css/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -77,92 +83,113 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="list-customers.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/customer/list-customers.jsp">
+      <file leaf-file-name="DemoSecurityConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/config/DemoSecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="84" selection-start-line="84" selection-end-line="84" />
+            <state relative-caret-position="187">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fancy-login.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/registration/fancy-login.jsp">
+      <file leaf-file-name="DemoAppConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/config/DemoAppConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="96" column="14" selection-start-line="96" selection-start-column="14" selection-end-line="96" selection-end-column="14" />
+            <state relative-caret-position="75">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="registration-confirmation.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/registration/registration-confirmation.jsp">
+      <file leaf-file-name="Author.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/entity/Author.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+            <state relative-caret-position="34">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="registration-form.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/registration/registration-form.jsp">
+      <file leaf-file-name="Cart.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/entity/Cart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-68">
-              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            <state relative-caret-position="136">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list-styles.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/style/list-styles.jsp">
+      <file leaf-file-name="Book.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/entity/Book.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="101" column="41" selection-start-line="101" selection-start-column="41" selection-end-line="101" selection-end-column="41" />
+            <state relative-caret-position="204">
+              <caret line="42" column="14" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style-form.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/style/style-form.jsp">
+      <file leaf-file-name="CrmUser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/entity/CrmUser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+            <state relative-caret-position="459">
+              <caret line="32" lean-forward="true" selection-start-line="28" selection-end-line="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="access-denied.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/system/access-denied.jsp">
+      <file leaf-file-name="AuthorDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/dao/AuthorDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+            <state relative-caret-position="68">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header-with-menu.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/system/header-with-menu.jsp">
+      <file leaf-file-name="AuthorDAOImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/dao/AuthorDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="70" column="6" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
+            <state relative-caret-position="527">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/system/header.jsp">
+      <file leaf-file-name="book-form.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/book/book-form.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="255">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userRoles.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/users/userRoles.jsp">
+      <file leaf-file-name="BookController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/BookController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+            <state relative-caret-position="171">
+              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -195,6 +222,7 @@
       <find>theId</find>
       <find>Style</find>
       <find>style</find>
+      <find>lazy</find>
     </findStrings>
     <replaceStrings>
       <replace>tempAuthor</replace>
@@ -232,8 +260,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/config/SecurityWebApplicationInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/AuthorController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/CustomerController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/BookController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/RegistrationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/StyleController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/dao/BookDAOImpl.java" />
@@ -254,20 +280,22 @@
         <option value="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/service/StyleServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/add-customer-style.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/author/author-form.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/book/book-form.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/book/list-books.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/customer/list-cart.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/customer/list-customers.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/registration/fancy-login.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/registration/registration-confirmation.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/registration/registration-form.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/style/list-styles.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/style/style-form.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/system/access-denied.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/system/header-with-menu.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/system/header.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/users/userRoles.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/registration/fancy-login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/registration/registration-form.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/author/author-form.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/book/book-form.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/BookController.java" />
       </list>
     </option>
   </component>
@@ -291,6 +319,9 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-73" />
     <option name="y" value="-8" />
@@ -305,8 +336,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -512,6 +541,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -598,7 +629,7 @@
       <listeners />
     </configuration>
     <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.81" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <deployment>
         <artifact name="spring-crm-with-security:war exploded">
           <settings>
@@ -608,7 +639,6 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_bonus-code-crm-with-security-jdbc-encryption-authentication" />
-        <option name="HTTP_PORT" value="8080" />
         <option name="JNDI_PORT" value="1199" />
       </server-settings>
       <predefined_log_file id="Tomcat" enabled="true" />
@@ -695,11 +725,12 @@
       <workItem from="1531092975699" duration="2716000" />
       <workItem from="1531096325331" duration="9135000" />
       <workItem from="1531128442906" duration="4030000" />
+      <workItem from="1531214479730" duration="2223000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131858000" />
+    <option name="totallyTimeSpent" value="134081000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -711,70 +742,42 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3282572" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.102874435" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.12191104" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3282572" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32784185" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.3282572" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3282572" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.100494236" />
-      <window_info anchor="bottom" id="Spring" order="7" weight="0.3282572" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3282572" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23071104" />
-      <window_info anchor="right" id="Bean Validation" order="3" />
-      <window_info id="Web" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3294893" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41350907" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2677761" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.3294893" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info id="Web" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Spring" order="7" weight="0.3294893" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Bean Validation" order="3" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3294893" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3294893" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3294893" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3294893" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5634267" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32921174" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3294893" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5632184" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3294893" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32921174" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" weight="0.3294893" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3294893" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41274816" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.3294893" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3294893" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26770833" />
+      <window_info anchor="right" id="Bean Validation" order="3" />
+      <window_info id="Web" order="2" side_tool="true" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3294893" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -813,13 +816,19 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/CustomerController.java</url>
-          <line>105</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/entity/Book.java</url>
+          <line>132</line>
           <properties />
-          <option name="timeStamp" value="25" />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/BookController.java</url>
+          <line>76</line>
+          <properties />
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="30" />
+      <option name="time" value="34" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
@@ -838,13 +847,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sql-scripts/setup-spring-security-bcrypt-demo-database.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="685">
-          <caret line="88" column="11" selection-start-line="88" selection-start-column="3" selection-end-line="88" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/dao/CustomerDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -880,54 +882,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/config/DemoAppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/config/DemoSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/config/MySpringMvcDispatcherServletInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/config/SecurityWebApplicationInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/BookController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/AuthorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-59">
-          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -941,13 +899,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/RegistrationController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
@@ -955,37 +906,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/StyleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="22" lean-forward="true" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/dao/AuthorDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/dao/BookDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="58" column="40" lean-forward="true" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/dao/AuthorDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-144">
-          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -1003,9 +927,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1016,55 +937,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/entity/Author.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/entity/Authority.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/entity/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-714">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/entity/Cart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1061#1062#0" expanded="true" />
-            <element signature="e#1083#1084#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/entity/CrmUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1072,9 +948,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-212">
           <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1096,10 +969,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
-          <folding>
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1114,9 +983,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="407">
           <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1141,13 +1007,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/author/author-form.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/author/list-authors.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-682">
@@ -1155,66 +1014,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/book/book-form.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-595">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/book/list-books.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1242">
-          <caret line="91" column="28" selection-start-line="91" selection-start-column="28" selection-end-line="91" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/customer/list-cart.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/customer/list-customers.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="1428">
           <caret line="84" selection-start-line="84" selection-end-line="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/registration/fancy-login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="96" column="14" selection-start-line="96" selection-start-column="14" selection-end-line="96" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/registration/registration-confirmation.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/registration/registration-form.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-68">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/style/list-styles.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
+        <state relative-caret-position="1717">
           <caret line="101" column="41" selection-start-line="101" selection-start-column="41" selection-end-line="101" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/style/style-form.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="48" column="16" selection-start-line="48" selection-start-column="16" selection-end-line="48" selection-end-column="16" />
+        <state relative-caret-position="901">
+          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1227,22 +1044,196 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/system/header-with-menu.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="70" column="6" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
+        <state relative-caret-position="1190">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/system/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/users/userRoles.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+        <state relative-caret-position="442">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/AuthorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="30" column="34" lean-forward="true" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/StyleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-577">
+          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/registration/fancy-login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="82" column="88" selection-start-line="82" selection-start-column="88" selection-end-line="82" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sql-scripts/setup-spring-security-bcrypt-demo-database.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="111" column="28" lean-forward="true" selection-start-line="111" selection-start-column="28" selection-end-line="111" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/registration/registration-confirmation.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/registration/registration-form.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/book/list-books.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="26" selection-start-line="3" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/author/author-form.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/customer/list-cart.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/config/MySpringMvcDispatcherServletInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/config/DemoSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/config/DemoAppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/entity/Author.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/entity/Cart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/entity/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="42" column="14" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/entity/CrmUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="32" lean-forward="true" selection-start-line="28" selection-end-line="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/dao/AuthorDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/dao/AuthorDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/book/book-form.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/luv2code/springdemo/controller/BookController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

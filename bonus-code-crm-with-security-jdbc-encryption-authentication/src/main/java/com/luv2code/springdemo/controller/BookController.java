@@ -7,6 +7,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.ServletException;
@@ -69,27 +70,11 @@ public class BookController {
         return "redirect:/book/list";
     }
 
-    @PostMapping("/saveBook")
-    public String saveBook(HttpServletRequest request) throws ServletException, IOException {
 
-        String[] identifier = request.getParameterValues("book_id");
-        Book theBook;
-        if (identifier[0].equals("0")) {
-            theBook = new Book();
-        } else {
-            theBook = bookService.getBook(Integer.parseInt(identifier[0]));
-        }
-        String[] nm = request.getParameterValues("name");
-        String[] st = request.getParameterValues("styleList");
-        String[] auth = request.getParameterValues("theAuthor");
-        theBook.setName(nm[0]);
-        theBook.setReserved(0);
-        theBook.getStyleList().clear();
-        theBook.setTheAuthor(authorService.getAuthor(Integer.parseInt(auth[0])));
-        for (int i = 0; i < st.length; i++) {
-            theBook.addStyle(styleService.getStyle(Integer.parseInt(st[i])));
-        }
-        bookService.saveBook(theBook);
+@RequestMapping(value = "/saveBook", method = RequestMethod.POST)
+    public String submit(@ModelAttribute("book") Book book, BindingResult result, HttpServletRequest request, Model model) {
+
+        bookService.saveBook(book);
 
         return "redirect:/book/list";
     }
