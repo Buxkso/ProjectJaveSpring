@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>luv2code - Access Denied</title>
+    <title>springCrm - Access Denied</title>
 </head>
 
 <body>
