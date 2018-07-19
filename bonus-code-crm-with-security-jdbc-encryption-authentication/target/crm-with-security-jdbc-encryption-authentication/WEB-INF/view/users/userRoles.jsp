@@ -1,6 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ include file = "../system/header.jsp" %>
+<%@ include file="../system/header.jsp" %>
 <%--
   Created by IntelliJ IDEA.
   User: Buxkso
@@ -16,11 +16,11 @@
 <body>
 <div>${username}</div>
 <div>
-<c:forEach var="tempRoles" items="${roles}">
-    <div>
-            ${tempRoles.authority}
-    </div>
-</c:forEach>
+    <c:forEach var="tempRoles" items="${roles}">
+        <div>
+                ${tempRoles.authority}
+        </div>
+    </c:forEach>
 </div>
 </body>
 </html>

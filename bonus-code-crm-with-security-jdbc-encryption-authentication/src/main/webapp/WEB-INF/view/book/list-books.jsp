@@ -47,10 +47,6 @@
 			<thead>
 			<tr>
 				<th scope="col">Name</th>
-				<th scope="col">Reserved</th>
-				<th scope="col">Reserved_from</th>
-				<th scope="col">Reserved_to</th>
-				<th scope="col">Owner</th>
 				<th scope="col">Author</th>
 				<th scope="col">Styles</th>
 
@@ -79,10 +75,6 @@
 
 				<tr>
 					<td scope="row"> ${tempBook.name} </td>
-					<td scope="row"> ${tempBook.reserved} </td>
-					<td scope="row"> ${tempBook.reserved_from} </td>
-					<td scope="row"> ${tempBook.reserved_to} </td>
-					<td scope="row"> ${tempBook.theUsername} </td>
 					<td scope="row"> ${tempBook.theAuthor.fullname} </td>
 					<td scope="row">
 

@@ -22,7 +22,7 @@
 
     <link type="text/css"
           rel="stylesheet"
-          href="${pageContext.request.contextPath}/resources/css/style.css" />
+          href="${pageContext.request.contextPath}/resources/css/style.css"/>
 
 </head>
 
@@ -33,13 +33,14 @@
 <div id="container">
 
     <div id="content">
-        
+
 
         <security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
 
             <!-- put new button: Add Style -->
 
-            <button onclick="window.location.href='showFormForAdd'; return false;" type="button" class="btn btn-outline-primary"> Add Style
+            <button onclick="window.location.href='showFormForAdd'; return false;" type="button"
+                    class="btn btn-outline-primary"> Add Style
             </button>
 
         </security:authorize>
@@ -71,17 +72,17 @@
 
                 <!-- construct an "update" link with author id -->
                 <c:url var="updateLink" value="/style/showFormForUpdate">
-                    <c:param name="styleId" value="${tempStyle.style_id}" />
+                    <c:param name="styleId" value="${tempStyle.style_id}"/>
                 </c:url>
 
                 <!-- construct an "delete" link with author id -->
                 <c:url var="deleteLink" value="/style/delete">
-                    <c:param name="styleId" value="${tempStyle.style_id}" />
+                    <c:param name="styleId" value="${tempStyle.style_id}"/>
                 </c:url>
 
                 <tr>
                     <td scope="row"> ${tempStyle.name} </td>
-                 
+
 
                     <security:authorize access="hasAnyRole('MANAGER', 'ADMIN')">
 
@@ -93,7 +94,8 @@
 
                             <security:authorize access="hasAnyRole('ADMIN')">
                                 <a href="${deleteLink}"
-                                   onclick="if (!(confirm('Are you sure you want to delete this style?'))) return false"> Delete</a>
+                                   onclick="if (!(confirm('Are you sure you want to delete this style?'))) return false">
+                                    Delete</a>
                             </security:authorize>
                         </td>
 
